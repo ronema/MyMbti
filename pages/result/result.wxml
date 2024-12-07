@@ -1,0 +1,53 @@
+<!--pages/result/result.wxml-->
+<wxs module="utils">
+module.exports = {
+  formatPercentage: function(score, dominant) {
+    return dominant + ': ' + (score[dominant] * 100).toFixed(0) + '%';
+  }
+}
+</wxs>
+
+<view class="container">
+  <view class="result-card">
+    <view class="type-header">
+      <text class="type-code">{{mbtiType}}</text>
+      <text class="type-name">{{typeDetails.name}}</text>
+    </view>
+
+    <view class="type-description">
+      <text>{{typeDetails.description}}</text>
+    </view>
+
+    <view class="characteristics-section">
+      <text class="section-title">个性特征</text>
+      <view class="characteristics-list">
+        <block wx:for="{{typeDetails.characteristics}}" wx:key="*this">
+          <view class="characteristic-item">
+            <text class="characteristic-icon">•</text>
+            <text class="characteristic-text">{{item}}</text>
+          </view>
+        </block>
+      </view>
+    </view>
+
+    <view class="dimensions-container">
+      <view class="dimension" wx:for="{{Object.entries(scores)}}" wx:key="index">
+        <text class="dimension-name">{{item[0]}}</text>
+        <view class="dimension-score">
+          <text>{{utils.formatPercentage(item[1], item[1].dominant)}}</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="actions">
+      <button class="action-btn share-btn" bindtap="shareResult">分享结果</button>
+      <button class="action-btn restart-btn" bindtap="restartTest">重新测试</button>
+    </view>
+  </view>
+
+  <view class="home-button-container">
+    <button class="btn btn-home" bindtap="returnToHome">
+      返回首页
+    </button>
+  </view>
+</view>

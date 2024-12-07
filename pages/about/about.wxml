@@ -1,0 +1,35 @@
+<!--pages/about/about.wxml-->
+<view class="container">
+  <view class="title">关于 MBTI</view>
+  
+  <view class="section">
+    <text class="section-title">MBTI 简介</text>
+    <text class="description">
+      MBTI（迈尔斯-布里格斯类型指标）是一种广泛使用的性格类型理论，帮助人们了解自己和他人的性格特点。
+    </text>
+  </view>
+  
+  <view class="section">
+    <text class="section-title">MBTI 维度</text>
+    
+    <block wx:if="{{dimensions}}">
+      <view class="dimension-item" wx:for="{{dimensions}}" wx:key="key">
+        <view class="dimension-header">
+          <text class="dimension-name">{{item.key}} - {{item.name}}</text>
+        </view>
+        <text class="dimension-description">{{item.description}}</text>
+      </view>
+    </block>
+    
+    <view wx:else class="loading-placeholder">
+      <text>正在加载维度信息...</text>
+    </view>
+  </view>
+  
+  <view class="section">
+    <text class="section-title">测试说明</text>
+    <text class="description">
+      本测试包含93个问题，通过选择最符合你性格的选项，帮助你了解自己的性格类型。测试结果仅供参考，不能完全定义个人性格。
+    </text>
+  </view>
+</view>

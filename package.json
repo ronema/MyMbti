@@ -1,15 +1,22 @@
 {
-  "name": "miniprogram-ts-less-quickstart",
+  "name": "my-mbti",
   "version": "1.0.0",
-  "description": "",
+  "description": "MBTI Personality Test Mini Program",
+  "main": "app.js",
   "scripts": {
+    "dev": "miniprogram-ci preview --project-path . --config-path ./project.config.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "mbti",
+    "personality",
+    "test",
+    "wechat",
+    "miniprogram"
+  ],
   "author": "",
-  "license": "",
+  "license": "ISC",
   "dependencies": {
-  },
-  "devDependencies": {
-    "miniprogram-api-typings": "^2.8.3-1"
+    "miniprogram-ci": "^1.9.5"
   }
 }

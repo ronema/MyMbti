@@ -1,0 +1,819 @@
+{
+    "version": "1.2.0",
+    "lastUpdated": "2024-01-07T20:11:05+08:00",
+    "totalQuestions": 93,
+    "mbtiDimensions": {
+        "E-I": {
+            "name": "外向-内向",
+            "description": "获取能量和与外界互动的方式",
+            "relatedQuestions": [3, 18, 9, 33, 37, 41, 50, 54, 58, 64, 67, 79, 82, 91]
+        },
+        "S-N": {
+            "name": "感觉-直觉",
+            "description": "获取和处理信息的方式",
+            "relatedQuestions": [6, 10, 11, 35, 39, 42, 46, 51, 55, 59, 65, 73, 80, 85, 88, 92]
+        },
+        "T-F": {
+            "name": "思考-情感",
+            "description": "做决策和判断的方式",
+            "relatedQuestions": [1, 7, 13, 14, 16, 20, 32, 36, 40, 44, 47, 49, 53, 57, 63, 70, 77, 81, 86, 89, 93]
+        },
+        "J-P": {
+            "name": "判断-感知",
+            "description": "处理外部世界的方式",
+            "relatedQuestions": [2, 4, 5, 8, 12, 15, 17, 19, 31, 34, 38, 43, 48, 52, 56, 60, 62, 66, 74, 78, 83, 84, 90]
+        }
+    },
+    "scoringRules": {
+        "E-I": {
+            "type": "binary",
+            "positiveChoice": "A",
+            "negativeChoice": "B",
+            "dimension": {
+                "positive": "外向(E)",
+                "negative": "内向(I)"
+            }
+        },
+        "S-N": {
+            "type": "binary",
+            "positiveChoice": "A",
+            "negativeChoice": "B",
+            "dimension": {
+                "positive": "感觉(S)",
+                "negative": "直觉(N)"
+            }
+        },
+        "T-F": {
+            "type": "binary",
+            "positiveChoice": "A",
+            "negativeChoice": "B",
+            "dimension": {
+                "positive": "思考(T)",
+                "negative": "情感(F)"
+            }
+        },
+        "J-P": {
+            "type": "binary",
+            "positiveChoice": "A",
+            "negativeChoice": "B",
+            "dimension": {
+                "positive": "判断(J)",
+                "negative": "感知(P)"
+            }
+        }
+    },
+    "questions": [
+        {
+            "id": 1,
+            "text": "认识你的人倾向形容你为：",
+            "options": [
+                {"label": "A", "text": "逻辑和明确"},
+                {"label": "B", "text": "热情而敏感"}
+            ],
+            "dimension": "T-F"
+        },
+        {
+            "id": 2,
+            "text": "你喜欢：",
+            "options": [
+                {"label": "A", "text": "有部署、有节奏的工作"},
+                {"label": "B", "text": "有灵活性、较为松散的工作"}
+            ],
+            "dimension": "J-P"
+        },
+        {
+            "id": 3,
+            "text": "你乐于拥有广泛的人际圈：",
+            "options": [
+                {"label": "A", "text": "是的"},
+                {"label": "B", "text": "如果可以选择的话，我更愿意一个人静静呆着"}
+            ],
+            "dimension": "E-I"
+        },
+        {
+            "id": 4,
+            "text": "你看肥皂剧的时候会很投入：",
+            "options": [
+                {"label": "A", "text": "是的"},
+                {"label": "B", "text": "不会"}
+            ],
+            "dimension": "J-P"
+        },
+        {
+            "id": 5,
+            "text": "电话铃声突然响起或类似这样的突发性事件，你习惯最先做出回应：",
+            "options": [
+                {"label": "A", "text": "是的"},
+                {"label": "B", "text": "不会"}
+            ],
+            "dimension": "J-P"
+        },
+        {
+            "id": 6,
+            "text": "热衷于猎奇和掌握新概念：",
+            "options": [
+                {"label": "A", "text": "是的"},
+                {"label": "B", "text": "不是"}
+            ],
+            "dimension": "S-N"
+        },
+        {
+            "id": 7,
+            "text": "当受到情感上的伤害或挫折时：",
+            "options": [
+                {"label": "A", "text": "虽然你觉得受伤，但一旦想通，就会很快从阴影中走出来"},
+                {"label": "B", "text": "你通常让自己的情绪深陷其中，很难走出来"}
+            ],
+            "dimension": "T-F"
+        },
+        {
+            "id": 8,
+            "text": "你选择的生活充满着：",
+            "options": [
+                {"label": "A", "text": "自然发生和弹性"},
+                {"label": "B", "text": "日程表和组织"}
+            ],
+            "dimension": "J-P"
+        },
+        {
+            "id": 9,
+            "text": "在同学聚会中，你通常：",
+            "options": [
+                {"label": "A", "text": "较安静并保留，直到你觉得舒服"},
+                {"label": "B", "text": "整体来说很健谈"}
+            ],
+            "dimension": "E-I"
+        },
+        {
+            "id": 10,
+            "text": "当你与朋友放松聊天时，你偏向谈论：",
+            "options": [
+                {"label": "A", "text": "实际的、具体的、关于此时此地的事物。例如，你也许会谈论即将要参加的旅程"},
+                {"label": "B", "text": "未来，关于改进或发明事物和生活的种种可能性。例如，你也许会谈论一个新的科学发明"}
+            ],
+            "dimension": "S-N"
+        },
+        {
+            "id": 11,
+            "text": "你经常考虑人类及其命运问题：",
+            "options": [
+                {"label": "A", "text": "是的"},
+                {"label": "B", "text": "不会"}
+            ],
+            "dimension": "S-N"
+        },
+        {
+            "id": 12,
+            "text": "你有时候会心血来潮做一件事情：",
+            "options": [
+                {"label": "A", "text": "是的"},
+                {"label": "B", "text": "极少会这样"}
+            ],
+            "dimension": "J-P"
+        },
+        {
+            "id": 13,
+            "text": "你倾向比较能够察觉到：",
+            "options": [
+                {"label": "A", "text": "当人们不合逻辑时"},
+                {"label": "B", "text": "当人们需要情感上的支持时"}
+            ],
+            "dimension": "T-F"
+        },
+        {
+            "id": 14,
+            "text": "你更容易被人们的情感所打动：",
+            "options": [
+                {"label": "A", "text": "不容易"},
+                {"label": "B", "text": "很容易"}
+            ],
+            "dimension": "T-F"
+        },
+        {
+            "id": 15,
+            "text": "你喜欢立刻行动而不习惯对各种选择进行反复斟酌：",
+            "options": [
+                {"label": "A", "text": "是的"},
+                {"label": "B", "text": "不是"}
+            ],
+            "dimension": "J-P"
+        },
+        {
+            "id": 16,
+            "text": "我更容易被认为是一个：",
+            "options": [
+                {"label": "A", "text": "很理性的人"},
+                {"label": "B", "text": "重感情的人"}
+            ],
+            "dimension": "T-F"
+        },
+        {
+            "id": 17,
+            "text": "如你有一个约见，你是习惯临场发挥还是事先周密准备：",
+            "options": [
+                {"label": "A", "text": "随机应变，临场发挥"},
+                {"label": "B", "text": "不周密准备我不安心"}
+            ],
+            "dimension": "J-P"
+        },
+        {
+            "id": 18,
+            "text": "业余时间里你常与一群人积极交往，参加聚会、一起购物：",
+            "options": [
+                {"label": "A", "text": "是的"},
+                {"label": "B", "text": "不，我独自呆着比较舒服"}
+            ],
+            "dimension": "E-I"
+        },
+        {
+            "id": 19,
+            "text": "若你有时间和金钱，你的朋友邀请你到国外度假，并且在前一天才通知，你会：",
+            "options": [
+                {"label": "A", "text": "必须先检查你的时间表"},
+                {"label": "B", "text": "立刻收拾行装"}
+            ],
+            "dimension": "J-P"
+        },
+        {
+            "id": 20,
+            "text": "与朋友交往时，你倾向于看重：",
+            "options": [
+                {"label": "A", "text": "情感上的相容性：对对方情感上的需求很敏感"},
+                {"label": "B", "text": "智慧上的相容性：沟通重要的想法；客观地讨论和辩论事情"}
+            ],
+            "dimension": "T-F"
+        },
+        {
+            "id": 31,
+            "text": "你倾向于：",
+            "options": [
+                {"label": "A", "text": "按部就班地完成任务"},
+                {"label": "B", "text": "随性发挥，享受过程"}
+            ],
+            "dimension": "J-P"
+        },
+        {
+            "id": 32,
+            "text": "在做决定时，你更看重：",
+            "options": [
+                {"label": "A", "text": "事实和数据"},
+                {"label": "B", "text": "人的感受"}
+            ],
+            "dimension": "T-F"
+        },
+        {
+            "id": 33,
+            "text": "在社交场合中，你通常：",
+            "options": [
+                {"label": "A", "text": "主动与他人交谈"},
+                {"label": "B", "text": "等待他人来找你聊天"}
+            ],
+            "dimension": "E-I"
+        },
+        {
+            "id": 34,
+            "text": "你更喜欢：",
+            "options": [
+                {"label": "A", "text": "提前计划好一切"},
+                {"label": "B", "text": "随机应变"}
+            ],
+            "dimension": "J-P"
+        },
+        {
+            "id": 35,
+            "text": "面对新环境时，你会：",
+            "options": [
+                {"label": "A", "text": "仔细观察实际情况"},
+                {"label": "B", "text": "思考各种可能性"}
+            ],
+            "dimension": "S-N"
+        },
+        {
+            "id": 36,
+            "text": "在处理问题时，你更倾向于：",
+            "options": [
+                {"label": "A", "text": "用逻辑分析"},
+                {"label": "B", "text": "考虑人的因素"}
+            ],
+            "dimension": "T-F"
+        },
+        {
+            "id": 37,
+            "text": "你更喜欢的工作环境是：",
+            "options": [
+                {"label": "A", "text": "安静独立的空间"},
+                {"label": "B", "text": "热闹开放的办公室"}
+            ],
+            "dimension": "E-I"
+        },
+        {
+            "id": 38,
+            "text": "你更倾向于：",
+            "options": [
+                {"label": "A", "text": "按既定计划行事"},
+                {"label": "B", "text": "随机应变"}
+            ],
+            "dimension": "J-P"
+        },
+        {
+            "id": 39,
+            "text": "在解决问题时，你更依赖：",
+            "options": [
+                {"label": "A", "text": "过往经验"},
+                {"label": "B", "text": "直觉判断"}
+            ],
+            "dimension": "S-N"
+        },
+        {
+            "id": 40,
+            "text": "你认为更重要的是：",
+            "options": [
+                {"label": "A", "text": "公平公正"},
+                {"label": "B", "text": "情理人情"}
+            ],
+            "dimension": "T-F"
+        },
+        {
+            "id": 41,
+            "text": "休息时，你更喜欢：",
+            "options": [
+                {"label": "A", "text": "独处"},
+                {"label": "B", "text": "和朋友在一起"}
+            ],
+            "dimension": "E-I"
+        },
+        {
+            "id": 42,
+            "text": "你更看重：",
+            "options": [
+                {"label": "A", "text": "当下的现实"},
+                {"label": "B", "text": "未来的可能"}
+            ],
+            "dimension": "S-N"
+        },
+        {
+            "id": 43,
+            "text": "你的行事风格是：",
+            "options": [
+                {"label": "A", "text": "有条不紊"},
+                {"label": "B", "text": "灵活多变"}
+            ],
+            "dimension": "J-P"
+        },
+        {
+            "id": 44,
+            "text": "在团队中，你更倾向于：",
+            "options": [
+                {"label": "A", "text": "保持客观立场"},
+                {"label": "B", "text": "调和人际关系"}
+            ],
+            "dimension": "T-F"
+        },
+        {
+            "id": 45,
+            "text": "参加派对时，你通常：",
+            "options": [
+                {"label": "A", "text": "待一会就想走"},
+                {"label": "B", "text": "玩到最后"}
+            ],
+            "dimension": "E-I"
+        },
+        {
+            "id": 46,
+            "text": "你更相信：",
+            "options": [
+                {"label": "A", "text": "实践经验"},
+                {"label": "B", "text": "理论创新"}
+            ],
+            "dimension": "S-N"
+        },
+        {
+            "id": 47,
+            "text": "做决定时，你更看重：",
+            "options": [
+                {"label": "A", "text": "客观事实"},
+                {"label": "B", "text": "个人价值"}
+            ],
+            "dimension": "T-F"
+        },
+        {
+            "id": 48,
+            "text": "你更喜欢的生活方式是：",
+            "options": [
+                {"label": "A", "text": "规律有序"},
+                {"label": "B", "text": "随性自由"}
+            ],
+            "dimension": "J-P"
+        },
+        {
+            "id": 49,
+            "text": "在评判事物时，你更倾向于：",
+            "options": [
+                {"label": "A", "text": "理性分析"},
+                {"label": "B", "text": "感性判断"}
+            ],
+            "dimension": "T-F"
+        },
+        {
+            "id": 50,
+            "text": "在新环境中，你通常：",
+            "options": [
+                {"label": "A", "text": "需要时间适应"},
+                {"label": "B", "text": "很快融入"}
+            ],
+            "dimension": "E-I"
+        },
+        {
+            "id": 51,
+            "text": "你更喜欢处理：",
+            "options": [
+                {"label": "A", "text": "具体的细节"},
+                {"label": "B", "text": "抽象的概念"}
+            ],
+            "dimension": "S-N"
+        },
+        {
+            "id": 52,
+            "text": "你的工作台通常：",
+            "options": [
+                {"label": "A", "text": "整齐有序"},
+                {"label": "B", "text": "随意摆放"}
+            ],
+            "dimension": "J-P"
+        },
+        {
+            "id": 53,
+            "text": "在处理矛盾时，你更倾向于：",
+            "options": [
+                {"label": "A", "text": "坚持原则"},
+                {"label": "B", "text": "寻求和谐"}
+            ],
+            "dimension": "T-F"
+        },
+        {
+            "id": 54,
+            "text": "你更喜欢的会议方式是：",
+            "options": [
+                {"label": "A", "text": "书面交流"},
+                {"label": "B", "text": "面对面讨论"}
+            ],
+            "dimension": "E-I"
+        },
+        {
+            "id": 55,
+            "text": "你更关注：",
+            "options": [
+                {"label": "A", "text": "现实可行的方案"},
+                {"label": "B", "text": "创新的想法"}
+            ],
+            "dimension": "S-N"
+        },
+        {
+            "id": 56,
+            "text": "你的日程安排通常：",
+            "options": [
+                {"label": "A", "text": "提前计划好"},
+                {"label": "B", "text": "随机应变"}
+            ],
+            "dimension": "J-P"
+        },
+        {
+            "id": 57,
+            "text": "在做决策时，你更重视：",
+            "options": [
+                {"label": "A", "text": "逻辑推理"},
+                {"label": "B", "text": "价值取向"}
+            ],
+            "dimension": "T-F"
+        },
+        {
+            "id": 58,
+            "text": "你更喜欢：",
+            "options": [
+                {"label": "A", "text": "深入的一对一交谈"},
+                {"label": "B", "text": "群体活动"}
+            ],
+            "dimension": "E-I"
+        },
+        {
+            "id": 59,
+            "text": "你更擅长：",
+            "options": [
+                {"label": "A", "text": "执行具体任务"},
+                {"label": "B", "text": "构思新方案"}
+            ],
+            "dimension": "S-N"
+        },
+        {
+            "id": 60,
+            "text": "你的生活节奏更倾向于：",
+            "options": [
+                {"label": "A", "text": "有规律"},
+                {"label": "B", "text": "随性"}
+            ],
+            "dimension": "J-P"
+        },
+        {
+            "id": 61,
+            "text": "你更喜欢关注：",
+            "options": [
+                {"label": "A", "text": "实际的细节"},
+                {"label": "B", "text": "整体的概念"}
+            ],
+            "dimension": "S-N"
+        },
+        {
+            "id": 62,
+            "text": "你的工作方式更倾向于：",
+            "options": [
+                {"label": "A", "text": "按计划进行"},
+                {"label": "B", "text": "随机应变"}
+            ],
+            "dimension": "J-P"
+        },
+        {
+            "id": 63,
+            "text": "在做决定时，你更看重：",
+            "options": [
+                {"label": "A", "text": "客观分析"},
+                {"label": "B", "text": "个人价值"}
+            ],
+            "dimension": "T-F"
+        },
+        {
+            "id": 64,
+            "text": "在社交场合，你通常：",
+            "options": [
+                {"label": "A", "text": "倾听为主"},
+                {"label": "B", "text": "表达为主"}
+            ],
+            "dimension": "E-I"
+        },
+        {
+            "id": 65,
+            "text": "你更喜欢：",
+            "options": [
+                {"label": "A", "text": "实践经验"},
+                {"label": "B", "text": "理论探索"}
+            ],
+            "dimension": "S-N"
+        },
+        {
+            "id": 66,
+            "text": "你的生活习惯是：",
+            "options": [
+                {"label": "A", "text": "规律有序"},
+                {"label": "B", "text": "随性自由"}
+            ],
+            "dimension": "J-P"
+        },
+        {
+            "id": 67,
+            "text": "与人交往时，你通常：",
+            "options": [
+                {"label": "A", "text": "主动热情"},
+                {"label": "B", "text": "谨慎保守"}
+            ],
+            "dimension": "E-I"
+        },
+        {
+            "id": 68,
+            "text": "你更相信：",
+            "options": [
+                {"label": "A", "text": "事实数据"},
+                {"label": "B", "text": "直觉感受"}
+            ],
+            "dimension": "S-N"
+        },
+        {
+            "id": 69,
+            "text": "你更倾向于：",
+            "options": [
+                {"label": "A", "text": "关注现实"},
+                {"label": "B", "text": "探索可能"}
+            ],
+            "dimension": "S-N"
+        },
+        {
+            "id": 70,
+            "text": "你的决策通常基于：",
+            "options": [
+                {"label": "A", "text": "理性分析"},
+                {"label": "B", "text": "价值判断"}
+            ],
+            "dimension": "T-F"
+        },
+        {
+            "id": 71,
+            "text": "在处理问题时，你更重视：",
+            "options": [
+                {"label": "A", "text": "效率"},
+                {"label": "B", "text": "和谐"}
+            ],
+            "dimension": "T-F"
+        },
+        {
+            "id": 72,
+            "text": "你更喜欢的环境是：",
+            "options": [
+                {"label": "A", "text": "安静的"},
+                {"label": "B", "text": "热闹的"}
+            ],
+            "dimension": "E-I"
+        },
+        {
+            "id": 73,
+            "text": "你更擅长：",
+            "options": [
+                {"label": "A", "text": "实际操作"},
+                {"label": "B", "text": "概念思考"}
+            ],
+            "dimension": "S-N"
+        },
+        {
+            "id": 74,
+            "text": "你的工作风格是：",
+            "options": [
+                {"label": "A", "text": "有序的"},
+                {"label": "B", "text": "灵活的"}
+            ],
+            "dimension": "J-P"
+        },
+        {
+            "id": 75,
+            "text": "在团队中，你更倾向：",
+            "options": [
+                {"label": "A", "text": "独立工作"},
+                {"label": "B", "text": "合作共事"}
+            ],
+            "dimension": "E-I"
+        },
+        {
+            "id": 76,
+            "text": "你更看重：",
+            "options": [
+                {"label": "A", "text": "实际经验"},
+                {"label": "B", "text": "创新想法"}
+            ],
+            "dimension": "S-N"
+        },
+        {
+            "id": 77,
+            "text": "做决定时，你更依赖：",
+            "options": [
+                {"label": "A", "text": "逻辑思考"},
+                {"label": "B", "text": "感性直觉"}
+            ],
+            "dimension": "T-F"
+        },
+        {
+            "id": 78,
+            "text": "你的生活节奏是：",
+            "options": [
+                {"label": "A", "text": "有规律的"},
+                {"label": "B", "text": "随性的"}
+            ],
+            "dimension": "J-P"
+        },
+        {
+            "id": 79,
+            "text": "与人交往时，你更倾向：",
+            "options": [
+                {"label": "A", "text": "保持距离"},
+                {"label": "B", "text": "亲近热情"}
+            ],
+            "dimension": "E-I"
+        },
+        {
+            "id": 80,
+            "text": "你更关注：",
+            "options": [
+                {"label": "A", "text": "具体细节"},
+                {"label": "B", "text": "整体方向"}
+            ],
+            "dimension": "S-N"
+        },
+        {
+            "id": 81,
+            "text": "在解决问题时，你更重视：",
+            "options": [
+                {"label": "A", "text": "公平"},
+                {"label": "B", "text": "情理"}
+            ],
+            "dimension": "T-F"
+        },
+        {
+            "id": 82,
+            "text": "你更喜欢：",
+            "options": [
+                {"label": "A", "text": "独处时光"},
+                {"label": "B", "text": "社交活动"}
+            ],
+            "dimension": "E-I"
+        },
+        {
+            "id": 83,
+            "text": "你的工作方式是：",
+            "options": [
+                {"label": "A", "text": "按部就班"},
+                {"label": "B", "text": "灵活多变"}
+            ],
+            "dimension": "J-P"
+        },
+        {
+            "id": 84,
+            "text": "你的生活态度是：",
+            "options": [
+                {"label": "A", "text": "计划导向"},
+                {"label": "B", "text": "随遇而安"}
+            ],
+            "dimension": "J-P"
+        },
+        {
+            "id": 85,
+            "text": "你更擅长：",
+            "options": [
+                {"label": "A", "text": "执行任务"},
+                {"label": "B", "text": "构思创意"}
+            ],
+            "dimension": "S-N"
+        },
+        {
+            "id": 86,
+            "text": "在团队合作中，你更注重：",
+            "options": [
+                {"label": "A", "text": "目标达成"},
+                {"label": "B", "text": "团队氛围"}
+            ],
+            "dimension": "T-F"
+        },
+        {
+            "id": 87,
+            "text": "你更喜欢的交流方式是：",
+            "options": [
+                {"label": "A", "text": "书面形式"},
+                {"label": "B", "text": "面对面"}
+            ],
+            "dimension": "E-I"
+        },
+        {
+            "id": 88,
+            "text": "你更看重：",
+            "options": [
+                {"label": "A", "text": "实际应用"},
+                {"label": "B", "text": "创新思维"}
+            ],
+            "dimension": "S-N"
+        },
+        {
+            "id": 89,
+            "text": "做决定时，你更依靠：",
+            "options": [
+                {"label": "A", "text": "理性判断"},
+                {"label": "B", "text": "价值观念"}
+            ],
+            "dimension": "T-F"
+        },
+        {
+            "id": 90,
+            "text": "你的行事风格是：",
+            "options": [
+                {"label": "A", "text": "有条理的"},
+                {"label": "B", "text": "随性的"}
+            ],
+            "dimension": "J-P"
+        },
+        {
+            "id": 91,
+            "text": "在社交场合，你通常：",
+            "options": [
+                {"label": "A", "text": "观察为主"},
+                {"label": "B", "text": "参与为主"}
+            ],
+            "dimension": "E-I"
+        },
+        {
+            "id": 92,
+            "text": "你更关注：",
+            "options": [
+                {"label": "A", "text": "现实情况"},
+                {"label": "B", "text": "未来可能"}
+            ],
+            "dimension": "S-N"
+        },
+        {
+            "id": 93,
+            "text": "在工作中，你更重视：",
+            "options": [
+                {"label": "A", "text": "效率"},
+                {"label": "B", "text": "人际关系"}
+            ],
+            "dimension": "T-F"
+        }
+    ],
+    "metadata": {
+        "author": "MBTI研究团队",
+        "license": "仅供个人研究和学习使用",
+        "disclaimer": "测试结果仅供参考，不能完全定义个人性格"
+    }
+}

@@ -1,22 +1,20 @@
+// index.js
 Page({
-  data: {
-    motto: 'MBTI性格测试'
+  data: {},
+
+  onLoad() {
+    // 页面加载时的逻辑
   },
-  
+
   startTest() {
     wx.navigateTo({
       url: '/pages/test/test'
     })
   },
-  
-  onLoad() {
-    // 页面加载时执行
-  },
-  
-  onShareAppMessage() {
-    return {
-      title: 'MBTI性格测试',
-      path: '/pages/index/index'
-    }
+
+  goToAbout() {
+    wx.navigateTo({
+      url: '/pages/about/about'
+    })
   }
 })

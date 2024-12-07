@@ -1,21 +1,34 @@
+<!--pages/test/test.wxml-->
 <view class="container">
-  <view class="question-container">
-    <text class="question-title">{{currentQuestion.title}}</text>
-    
-    <view class="options">
-      <block wx:for="{{currentQuestion.options}}" wx:key="index">
-        <button 
-          class="option-btn" 
-          type="default" 
-          bindtap="selectOption" 
-          data-index="{{index}}">
-          {{item}}
-        </button>
+  <view class="progress-container">
+    <view class="progress-bar">
+      <view 
+        class="progress-value" 
+        style="width: {{progress}}%;">
+      </view>
+    </view>
+    <text class="progress-text">{{currentQuestionIndex + 1}} / {{questions.length}}</text>
+  </view>
+
+  <view wx:if="{{questions.length > 0}}" class="question-container">
+    <view class="question-title">
+      {{questions[currentQuestionIndex].text}}
+    </view>
+
+    <view class="options-container">
+      <block wx:for="{{questions[currentQuestionIndex].options}}" wx:key="label">
+        <view 
+          class="option-item {{selectedAnswers[questions[currentQuestionIndex].id] === item.label ? 'selected' : ''}}"
+          data-question-id="{{questions[currentQuestionIndex].id}}"
+          data-label="{{item.label}}"
+          bindtap="selectOption">
+          {{item.text}}
+        </view>
       </block>
     </view>
-    
-    <view class="progress">
-      <text>第 {{currentQuestionIndex + 1}} / {{totalQuestions}} 题</text>
-    </view>
+  </view>
+
+  <view wx:else class="loading-container">
+    <text>正在加载题目...</text>
   </view>
 </view>

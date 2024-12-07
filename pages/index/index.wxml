@@ -1,21 +1,50 @@
-<view class="container">
-  <view class="header">
-    <text class="title">MBTI性格测试</text>
-    <text class="subtitle">了解你的独特性格</text>
+<!--index.wxml-->
+<view class="page">
+  <view class="background-layer">
+    <view class="gradient-overlay"></view>
+    <view class="particle-layer"></view>
   </view>
   
-  <view class="content">
-    <image src="/images/mbti-logo.png" class="logo"></image>
-    
-    <view class="description">
-      <text>通过16种性格类型，发现你的独特魅力</text>
+  <scroll-view class="scrollarea" scroll-y type="list">
+    <view class="container">
+      <view class="header">
+        <view class="logo-container">
+          <view class="logo-circle"></view>
+          <view class="logo-text">MyMBTI</view>
+        </view>
+        <text class="title">发现你的内在世界</text>
+        <text class="subtitle">通过16种性格类型探索自我</text>
+      </view>
+
+      <view class="content">
+        <view class="glass-card">
+          <text class="description">MBTI不仅仅是一个测试，更是一面映射内心的镜子。每一个选择都是通向自我理解的钥匙。</text>
+          
+          <view class="features">
+            <view class="feature-item" wx:for="{{['能量源泉', '信息之眼', '决策之心', '生活方式']}}" wx:key="*this">
+              <view class="feature-icon">
+                <text class="icon-text">{{index + 1}}</text>
+              </view>
+              <view class="feature-details">
+                <text class="feature-title">{{item}}</text>
+                <text class="feature-desc">
+                  {{['外向(E) vs 内向(I)', '实感(S) vs 直觉(N)', '思维(T) vs 情感(F)', '判断(J) vs 知觉(P)'][index]}}
+                </text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view class="footer">
+        <view class="btn-group">
+          <button class="start-btn" bindtap="startTest">
+            <text class="btn-text">开启心灵探索</text>
+            <view class="btn-icon">→</view>
+          </button>
+          <button class="about-btn" bindtap="goToAbout">了解更多</button>
+        </view>
+      </view>
     </view>
-    
-    <button 
-      class="start-btn" 
-      type="primary" 
-      bindtap="startTest">
-      开始测试
-    </button>
-  </view>
+  </scroll-view>
 </view>

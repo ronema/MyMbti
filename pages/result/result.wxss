@@ -1,0 +1,313 @@
+/* pages/result/result.wxss */
+/* 结果页面样式 */
+page {
+  background: linear-gradient(135deg, #e6f2ff 0%, #b0e0e6 100%);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40rpx;
+  box-sizing: border-box;
+  position: relative;
+  padding-bottom: 120rpx; /* 为底部按钮留出空间 */
+}
+
+.result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40rpx;
+  box-sizing: border-box;
+}
+
+.result-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30rpx;
+}
+
+.result-title {
+  font-size: 36rpx;
+  color: #333;
+  font-weight: bold;
+}
+
+.result-type {
+  font-size: 48rpx;
+  color: #1E90FF;
+  margin-top: 10rpx;
+}
+
+.result-description {
+  text-align: center;
+  font-size: 28rpx;
+  color: #666;
+  margin-bottom: 30rpx;
+  padding: 0 20rpx;
+}
+
+.dimensions-container {
+  width: 100%;
+  background-color: white;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  margin-bottom: 30rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+}
+
+.dimension {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15rpx 0;
+  border-bottom: 1rpx solid #eee;
+}
+
+.dimension:last-child {
+  border-bottom: none;
+}
+
+.dimension-name {
+  font-size: 32rpx;
+  color: #333;
+}
+
+.dimension-score {
+  font-size: 28rpx;
+  color: #1E90FF;
+}
+
+.result-actions {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.btn {
+  width: 40%;
+  margin: 0 10rpx;
+  border-radius: 50rpx;
+  font-size: 32rpx;
+  padding: 20rpx 0;
+}
+
+.btn-primary {
+  background-color: #1E90FF;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #f4f4f4;
+  color: #1E90FF;
+  border: 2rpx solid #1E90FF;
+}
+
+.result-card {
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 30rpx;
+  padding: 40rpx;
+  box-shadow: 0 15rpx 30rpx rgba(0, 0, 0, 0.1);
+  margin-bottom: 30rpx;
+}
+
+.type-header {
+  margin-bottom: 30rpx;
+}
+
+.type-code {
+  display: block;
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #4CAF50;
+  margin-bottom: 10rpx;
+}
+
+.type-name {
+  display: block;
+  font-size: 36rpx;
+  color: #333;
+}
+
+.type-description {
+  font-size: 28rpx;
+  color: #666;
+  margin-bottom: 30rpx;
+  line-height: 1.6;
+}
+
+.characteristics-section {
+  margin-bottom: 30rpx;
+  text-align: left;
+}
+
+.section-title {
+  display: block;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20rpx;
+  text-align: center;
+}
+
+.characteristics-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15rpx;
+}
+
+.characteristic-item {
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+  color: #666;
+}
+
+.characteristic-icon {
+  margin-right: 15rpx;
+  color: #4CAF50;
+  font-size: 24rpx;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 20rpx;
+  margin-top: 30rpx;
+}
+
+.action-btn {
+  width: 40%;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  font-size: 28rpx;
+}
+
+.share-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.restart-btn {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.home-button-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20rpx;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 -8rpx 15rpx rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.btn-home {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #1E90FF;
+  color: white;
+  border-radius: 15rpx;
+  font-size: 32rpx;
+  padding: 20rpx;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.btn:hover, .btn-home:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8rpx 15rpx rgba(0, 0, 0, 0.2);
+}
+
+/* 头像样式 */
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30rpx;
+}
+
+.personality-avatar {
+  width: 250rpx;
+  height: 250rpx;
+  border-radius: 50%;
+  border: 8rpx solid #1E90FF;
+  box-shadow: 0 10rpx 20rpx rgba(0, 0, 0, 0.1);
+}
+
+.avatar-loading, .avatar-placeholder {
+  width: 250rpx;
+  height: 250rpx;
+  border-radius: 50%;
+  background-color: rgba(30, 144, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1E90FF;
+  font-size: 28rpx;
+}
+
+.mbti-type {
+  font-size: 60rpx;
+  font-weight: bold;
+  color: #1E90FF;
+  text-align: center;
+  margin-bottom: 20rpx;
+}
+
+.type-name {
+  font-size: 40rpx;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30rpx;
+}
+
+.section-title {
+  display: block;
+  font-size: 36rpx;
+  font-weight: 600;
+  color: #1E90FF;
+  margin-bottom: 20rpx;
+  border-bottom: 4rpx solid #1E90FF;
+  padding-bottom: 10rpx;
+}
+
+.description-text, .strength-item, .career-item {
+  font-size: 30rpx;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 15rpx;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin-bottom: 30rpx;
+}
+
+.btn {
+  width: 40%;
+  margin: 0 15rpx;
+  border-radius: 15rpx;
+  font-size: 32rpx;
+  padding: 20rpx;
+  transition: all 0.3s ease;
+}
+
+.btn-restart {
+  background-color: #1E90FF;
+  color: white;
+}
+
+.btn-share {
+  background-color: #4169E1;
+  color: white;
+}
