@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="question-container">
+    <text class="question-title">{{currentQuestion.title}}</text>
+    
+    <view class="options">
+      <block wx:for="{{currentQuestion.options}}" wx:key="index">
+        <button 
+          class="option-btn" 
+          type="default" 
+          bindtap="selectOption" 
+          data-index="{{index}}">
+          {{item}}
+        </button>
+      </block>
+    </view>
+    
+    <view class="progress">
+      <text>第 {{currentQuestionIndex + 1}} / {{totalQuestions}} 题</text>
+    </view>
+  </view>
+</view>

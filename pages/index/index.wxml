@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="header">
+    <text class="title">MBTI性格测试</text>
+    <text class="subtitle">了解你的独特性格</text>
+  </view>
+  
+  <view class="content">
+    <image src="/images/mbti-logo.png" class="logo"></image>
+    
+    <view class="description">
+      <text>通过16种性格类型，发现你的独特魅力</text>
+    </view>
+    
+    <button 
+      class="start-btn" 
+      type="primary" 
+      bindtap="startTest">
+      开始测试
+    </button>
+  </view>
+</view>

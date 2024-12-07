@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f6f6f6;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 50rpx;
+}
+
+.title {
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 28rpx;
+  color: #666;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 300rpx;
+  height: 300rpx;
+  margin-bottom: 50rpx;
+}
+
+.description {
+  text-align: center;
+  color: #888;
+  margin-bottom: 50rpx;
+}
+
+.start-btn {
+  width: 500rpx;
+  margin-top: 50rpx;
+}
